@@ -1,0 +1,19 @@
+.main_wrapper {
+    padding-top: 2rem;
+    
+    background: #023e8a;
+    padding:1.5rem 
+}
+
+.sub_wrapper {
+    display: flex;
+    margin: auto auto;
+    margin-top: 2rem;
+    justify-content: space-between;
+    width: 70%;
+    
+}
+
+.map_wrapper{
+    
+}

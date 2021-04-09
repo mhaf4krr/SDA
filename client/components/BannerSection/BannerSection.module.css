@@ -1,0 +1,17 @@
+.main_wrapper {
+    height:30rem;
+    background-color: rgb(100, 128, 0);
+    display: flex;
+    position: relative;
+}
+
+.banner {
+    width: 70%;
+    background-color: tomato;
+    height:100%
+}
+
+.pictures {
+    width: 30%;
+    background: turquoise;
+}
