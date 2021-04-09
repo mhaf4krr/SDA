@@ -1,5 +1,7 @@
 import React from 'react'
 
+import Link from "next/link"
+
 import { Menu, Dropdown } from "semantic-ui-react"
 
 export default function Navigation() {
@@ -9,17 +11,31 @@ export default function Navigation() {
     return (
         <div>
             <Menu size="large" stackable  borderless >
-                <Menu.Item
-                    name='home'
+        
+
+                <Menu.Item name='home'
                     active={activeItem === 'home'}
-                    onClick={handleItemClick}
-                />
+                    onClick={handleItemClick}>
+                    <Link href="/">
+                        <a>Home</a>
+                    </Link>
+                </Menu.Item>
 
                 <Dropdown text='Organization' className='link item'>
                     <Dropdown.Menu>
-                        <Dropdown.Item>How to Reach</Dropdown.Item>
-                        <Dropdown.Item>SDA Borard Members</Dropdown.Item>
-                        <Dropdown.Item>Organizational Chart</Dropdown.Item>
+                        <Dropdown.Item>
+                            <Link href="/organization/Reach">
+                                <a>How to Reach</a>
+                            </Link>
+                        </Dropdown.Item>
+                        <Dropdown.Item>
+                            <Link href="/organization/Board">
+                                <a>SDA Borard Members</a>
+                            </Link>
+                        </Dropdown.Item>
+                        <Dropdown.Item>
+                            <a href="/pdfs/organization.pdf" target="_blank">Organizational Chart</a>
+                        </Dropdown.Item>
                         <Dropdown.Item>Administrative Setup</Dropdown.Item>
                         <Dropdown.Divider />
                         <Dropdown.Item>Acheivements</Dropdown.Item>

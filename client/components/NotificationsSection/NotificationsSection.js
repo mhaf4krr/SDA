@@ -4,6 +4,8 @@ import { Container, Divider, Input, Menu, Segment, Table } from 'semantic-ui-rea
 
 import NotificationTable from "./Table/NotificationTable"
 
+import styles from "./NotificationSection.module.css"
+
 export default function NotificationsSection() {
 
     let [activeItem, setActiveItem] = React.useState("Public Notices")
@@ -11,9 +13,8 @@ export default function NotificationsSection() {
 
     return (
        
-        <div style={{ padding: "1.5rem 2rem",backgroundColor:"#EEF0F1" }}>
-            <Divider/>
-             
+        <div className={styles["main_wrapper"]} style={{ padding: "1.5rem 2rem",backgroundColor:"#EEF0F1" }}>
+         
             <Menu attached='top' stackable tabular>
 
                 <Menu.Item
@@ -47,13 +48,13 @@ export default function NotificationsSection() {
 
             </Menu>
 
-            <Segment attached='bottom'>
+            <Segment style={{height:"90%",overflow:"scroll"}} attached='bottom'>
 
                 <NotificationTable />
 
             </Segment>
            
-           <Divider/>
+         
 
         </div>
        

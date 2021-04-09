@@ -1,0 +1,21 @@
+.main_wrapper{
+    height:47%;
+    background: #ffffff;
+    border-radius: .4rem;
+    display: flex;
+}
+
+.image{
+    width: 45%;
+    height: 100%;
+    background: tomato;
+    
+}
+
+.information {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

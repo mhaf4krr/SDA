@@ -6,12 +6,12 @@
 }
 
 .banner {
-    width: 70%;
+    width: 80%;
     background-color: tomato;
     height:100%
 }
 
-.pictures {
+.people {
     width: 30%;
-    background: turquoise;
+    background: #023e8a;
 }

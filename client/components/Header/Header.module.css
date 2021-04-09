@@ -1,5 +1,5 @@
 .topbar {
-    font-size: .8rem;
+    font-size: 1rem;
     padding:.3rem;
     background-color: #03045e;
     color: white;
@@ -22,18 +22,17 @@
 .header_container  h1{
     margin: .5rem 0;
     color:white;
-    font-size: 1.5rem;
+    font-size: 2rem;
+    font-weight: bolder;
 }
 
 .header_container h3{
     margin-top: .5rem;
     color:white;
     font-size: 1.2rem;
+    font-weight: bolder;
 }
 
-.navigation_wrapper_main {
-
-}
 
 .navigation_wrapper{
     text-align: center;

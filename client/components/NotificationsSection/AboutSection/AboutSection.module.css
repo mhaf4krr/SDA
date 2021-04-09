@@ -1,0 +1,9 @@
+.main_wrapper {
+    width: 35%;;
+    padding: 2.5rem;
+}
+
+.main_wrapper > p {
+    text-align: justify;
+    line-height: 1.8rem;
+}
