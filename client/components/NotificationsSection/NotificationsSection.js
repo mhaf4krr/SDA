@@ -6,15 +6,43 @@ import NotificationTable from "./Table/NotificationTable"
 
 import styles from "./NotificationSection.module.css"
 
-export default function NotificationsSection() {
+export default function NotificationsSection(props) {
 
     let [activeItem, setActiveItem] = React.useState("Public Notices")
     let handleItemClick = (e, { name }) => setActiveItem(name)
+
+    let returnDataBasedOnTab = ()=>{
+        switch(activeItem){
+            case "Public Notices":
+                return props["data"]["public_notices"]
+                break;
+
+            case "Tenders":
+                return props["data"]["tenders"]
+                break;
+
+                case "Circulars and Orders":
+                    return props["data"]["circular_orders"]
+                    break;
+
+            case "Expression of Interest":
+                return props["data"]["eoi"]
+                break;
+
+                case "Short Term Quotations":
+                    return props["data"]["short_term_quotations"]
+                    break;
+
+            default:return props["data"]["public_notices"]
+            break;
+        }
+    }
 
     return (
        
         <div className={styles["main_wrapper"]} style={{ padding: "1.5rem 2rem",backgroundColor:"#EEF0F1" }}>
          
+         {console.log(props.data)}
             <Menu attached='top' stackable tabular>
 
                 <Menu.Item
@@ -48,9 +76,9 @@ export default function NotificationsSection() {
 
             </Menu>
 
-            <Segment style={{height:"90%",overflow:"scroll"}} attached='bottom'>
+            <Segment style={{height:"90%"}} attached='bottom'>
 
-                <NotificationTable />
+                <NotificationTable data={returnDataBasedOnTab()}/>
 
             </Segment>
            

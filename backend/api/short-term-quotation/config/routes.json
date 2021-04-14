@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/api/short-term-quotations",
+      "handler": "short-term-quotation.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/api/short-term-quotations/count",
+      "handler": "short-term-quotation.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/api/short-term-quotations/:id",
+      "handler": "short-term-quotation.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/api/short-term-quotations",
+      "handler": "short-term-quotation.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/api/short-term-quotations/:id",
+      "handler": "short-term-quotation.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/short-term-quotations/:id",
+      "handler": "short-term-quotation.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

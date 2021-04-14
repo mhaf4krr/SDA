@@ -6,11 +6,11 @@ import AboutSection from "./AboutSection/AboutSection"
 
 import NotificationSection from "./NotificationsSection"
 
-export default function Main() {
+export default function Main(props) {
     return (
         <div className={styles["main_wrapper"]}>
             <AboutSection/>
-            <NotificationSection/>
+            <NotificationSection data={props["data"]}/>
         </div>
     )
 }

@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "name": "projects",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "desc": {
+      "type": "richtext"
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "housing",
+        "commercial",
+        "infrastructural"
+      ]
+    },
+    "cat_type": {
+      "type": "uid"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/api/gallery-photos",
+      "handler": "gallery-photo.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/api/gallery-photos/count",
+      "handler": "gallery-photo.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/api/gallery-photos/:id",
+      "handler": "gallery-photo.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/api/gallery-photos",
+      "handler": "gallery-photo.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/api/gallery-photos/:id",
+      "handler": "gallery-photo.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/gallery-photos/:id",
+      "handler": "gallery-photo.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

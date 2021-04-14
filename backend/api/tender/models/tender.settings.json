@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tenders",
+  "info": {
+    "name": "Tender"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "file": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "date": {
+      "type": "date"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/api/public-notices",
+      "handler": "public-notice.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/api/public-notices/count",
+      "handler": "public-notice.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/api/public-notices/:id",
+      "handler": "public-notice.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/api/public-notices",
+      "handler": "public-notice.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/api/public-notices/:id",
+      "handler": "public-notice.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/public-notices/:id",
+      "handler": "public-notice.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

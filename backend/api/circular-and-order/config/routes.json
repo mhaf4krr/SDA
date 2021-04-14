@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/api/circular-and-orders",
+      "handler": "circular-and-order.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/api/circular-and-orders/count",
+      "handler": "circular-and-order.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/api/circular-and-orders/:id",
+      "handler": "circular-and-order.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/api/circular-and-orders",
+      "handler": "circular-and-order.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/api/circular-and-orders/:id",
+      "handler": "circular-and-order.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/circular-and-orders/:id",
+      "handler": "circular-and-order.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

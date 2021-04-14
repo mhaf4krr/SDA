@@ -1,10 +1,10 @@
 .main_wrapper {
-    background: #03045e;
+    background: #111111;
   
 }
 .main_wrapper > p{
     color:white;
     font-size: 1rem;
     text-align: center;
-    padding:1.3rem 0
+    padding:.7rem 0
 }

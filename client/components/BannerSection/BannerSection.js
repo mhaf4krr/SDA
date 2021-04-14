@@ -6,11 +6,11 @@ import Banner from "./Banner/Banner"
 
 import People from "./People/People"
 
-export default function BannerSection() {
+export default function BannerSection(props) {
     return (
         <div className={styles["main_wrapper"]}>
             <div className={styles["banner"]}>
-                <Banner/>
+                <Banner banners={props.banners}/>
             </div>
             <div className={styles["people"]}>
                 <People/>

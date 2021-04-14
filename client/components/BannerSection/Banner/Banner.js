@@ -4,36 +4,23 @@ import Carousel from "react-bootstrap/Carousel"
 
 import styles from "./Banner.module.css"
 
+import {main_backend_path} from "../../../constants/constants"
 
-const images = [
-    {
-      original: 'https://picsum.photos/id/1018/1000/600/',
-      thumbnail: 'https://picsum.photos/id/1018/250/150/',
-    },
-    {
-      original: 'https://picsum.photos/id/1015/1000/600/',
-      thumbnail: 'https://picsum.photos/id/1015/250/150/',
-    },
-    {
-      original: 'https://picsum.photos/id/1019/1000/600/',
-      thumbnail: 'https://picsum.photos/id/1019/250/150/',
-    },
-  ];
-
-export default function Banner() {
+export default function Banner(props) {
     return (
         <Carousel className={styles["slide"]}>
-            {images.map((image)=>{
+          {console.log(props.banners)}
+            {props.banners.map((image)=>{
                 return( <Carousel.Item className={styles["slide"]}>
                     <img
                       className="d-block w-100"
-                      src={image.original}
-                      alt="First slide"
+                      src={main_backend_path+image["file"]["url"]}
+                      alt="slide"
                      
                     />
                     <Carousel.Caption>
-                      <h3>First slide label</h3>
-                      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                      
+                      <p>{image["title"]}</p>
                     </Carousel.Caption>
                   </Carousel.Item>)
             })}
