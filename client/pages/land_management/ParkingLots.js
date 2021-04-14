@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container,Header } from 'semantic-ui-react'
+import { Container,Header,Table } from 'semantic-ui-react'
 
 let DATA = [
     {
@@ -37,12 +37,12 @@ let DATA = [
     {
         loc:"I.G. Road near Exhibition",
         land:"9.15 kanals",
-        capacity:"100 four vehicles"
+        capacity:"100 four wheelers"
     },
     {
         loc:"Batamaloo, near baqa masjid",
         land:"6.5 kanals",
-        capacity:"150 four vehicles"
+        capacity:"150 four wheelers"
     },
 
 ]
@@ -67,12 +67,13 @@ export default function ParkingLots() {
           </Table.Header>
 
           <Table.Body>
-            {members.map((member, index) => {
+            {DATA.map((item, index) => {
               return (
                 <Table.Row textAlign="center">
                   <Table.Cell>{index + 1}</Table.Cell>
-                  <Table.Cell>{member["name"]}</Table.Cell>
-                  <Table.Cell>{member["designation"]}</Table.Cell>
+                  <Table.Cell>{item["loc"]}</Table.Cell>
+                  <Table.Cell>{item["land"]}</Table.Cell>
+                  <Table.Cell>{item["capacity"]}</Table.Cell>
                 </Table.Row>
               );
             })}
