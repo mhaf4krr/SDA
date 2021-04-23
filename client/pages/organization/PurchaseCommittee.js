@@ -2,6 +2,8 @@ import React from "react";
 
 import { Container, Header, Table } from "semantic-ui-react";
 
+import PageContainer from "../../components/PageContainer/PageContainer";
+
 let members = [
   {
     name: "Director Land Management ",
@@ -32,36 +34,34 @@ let members = [
 
 export default function PurchaseCommittee() {
   return (
-    <div style={{ padding: "3.5rem" }}>
-      <Container>
-        <Header>Purchase Committee</Header>
+    <PageContainer>
+      <Header>Purchase Committee</Header>
 
-        <p>
-          SDA Purchase Committee has been re-constituted vide SDA Order No.
-          SDA/VC/476 dated 04/03/2020 and comprises of following officers:
-        </p>
-        <Table celled unstackable>
-          <Table.Header>
-            <Table.Row textAlign="center">
-              <Table.HeaderCell width={1}>S.No</Table.HeaderCell>
-              <Table.HeaderCell>Member</Table.HeaderCell>
-              <Table.HeaderCell>Designation</Table.HeaderCell>
-            </Table.Row>
-          </Table.Header>
+      <p>
+        SDA Purchase Committee has been re-constituted vide SDA Order No.
+        SDA/VC/476 dated 04/03/2020 and comprises of following officers:
+      </p>
+      <Table celled unstackable>
+        <Table.Header>
+          <Table.Row textAlign='center'>
+            <Table.HeaderCell width={1}>S.No</Table.HeaderCell>
+            <Table.HeaderCell>Member</Table.HeaderCell>
+            <Table.HeaderCell>Designation</Table.HeaderCell>
+          </Table.Row>
+        </Table.Header>
 
-          <Table.Body>
-            {members.map((member, index) => {
-              return (
-                <Table.Row textAlign="center">
-                  <Table.Cell>{index + 1}</Table.Cell>
-                  <Table.Cell>{member["name"]}</Table.Cell>
-                  <Table.Cell>{member["designation"]}</Table.Cell>
-                </Table.Row>
-              );
-            })}
-          </Table.Body>
-        </Table>
-      </Container>
-    </div>
+        <Table.Body>
+          {members.map((member, index) => {
+            return (
+              <Table.Row textAlign='center'>
+                <Table.Cell>{index + 1}</Table.Cell>
+                <Table.Cell>{member["name"]}</Table.Cell>
+                <Table.Cell>{member["designation"]}</Table.Cell>
+              </Table.Row>
+            );
+          })}
+        </Table.Body>
+      </Table>
+    </PageContainer>
   );
 }

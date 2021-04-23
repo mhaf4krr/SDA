@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/api/enforcements",
+      "handler": "enforcement.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/api/enforcements/count",
+      "handler": "enforcement.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/api/enforcements/:id",
+      "handler": "enforcement.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/api/enforcements",
+      "handler": "enforcement.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/api/enforcements/:id",
+      "handler": "enforcement.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/enforcements/:id",
+      "handler": "enforcement.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

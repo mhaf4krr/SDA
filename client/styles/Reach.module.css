@@ -1,3 +1,9 @@
-.main_wrapper{
-    padding:2rem
+.main_wrapper {
+  padding: 2rem;
+}
+
+@media (max-width: 1120px) {
+  .main_wrapper {
+    width: 100%;
+  }
 }

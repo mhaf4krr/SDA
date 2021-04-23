@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/api/rti-applications",
+      "handler": "rti-application.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/api/rti-applications/count",
+      "handler": "rti-application.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/api/rti-applications/:id",
+      "handler": "rti-application.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/api/rti-applications",
+      "handler": "rti-application.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/api/rti-applications/:id",
+      "handler": "rti-application.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/rti-applications/:id",
+      "handler": "rti-application.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/api/boca-minutes",
+      "handler": "boca-minute.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/api/boca-minutes/count",
+      "handler": "boca-minute.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/api/boca-minutes/:id",
+      "handler": "boca-minute.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/api/boca-minutes",
+      "handler": "boca-minute.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/api/boca-minutes/:id",
+      "handler": "boca-minute.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/boca-minutes/:id",
+      "handler": "boca-minute.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

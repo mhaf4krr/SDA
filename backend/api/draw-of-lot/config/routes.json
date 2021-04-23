@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/api/draw-of-lots",
+      "handler": "draw-of-lot.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/api/draw-of-lots/count",
+      "handler": "draw-of-lot.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/api/draw-of-lots/:id",
+      "handler": "draw-of-lot.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/api/draw-of-lots",
+      "handler": "draw-of-lot.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/api/draw-of-lots/:id",
+      "handler": "draw-of-lot.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/api/draw-of-lots/:id",
+      "handler": "draw-of-lot.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

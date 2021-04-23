@@ -1,5 +1,31 @@
 .main_wrapper a {
+  padding: 0.5 1rem;
+  color: black;
+}
 
-    padding:0.5 1rem;
-    color:black
+.supreme_wrapper {
+}
+
+.icons_wrapper {
+  height: 3rem;
+  background-color: #03045e;
+  display: none;
+}
+
+.menu_hidden {
+}
+
+@media (max-width: 480px) {
+  .main_wrapper {
+  }
+
+  .menu_hidden {
+    display: none;
+  }
+
+  .icons_wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
 }

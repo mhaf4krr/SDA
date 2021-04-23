@@ -52,7 +52,7 @@ export default function AllotmentPolicy() {
     <Container style={{ padding: "3rem" }}>
       <Header>Allotment Policy</Header>
 
-      <Header as="h4">Housing</Header>
+      <Header as='h4'>Housing</Header>
       <p>
         The Govt. has already laid down a comprehensive policy on development of
         Housing Colonies by Development Authorities for allotment of residential
@@ -70,7 +70,7 @@ export default function AllotmentPolicy() {
       <div>
         <Table>
           <Table.Header>
-            <Table.Row textAlign="center">
+            <Table.Row textAlign='center'>
               <Table.HeaderCell width={1}>S.No</Table.HeaderCell>
               <Table.HeaderCell>Category</Table.HeaderCell>
               <Table.HeaderCell>Percentage</Table.HeaderCell>
@@ -80,7 +80,7 @@ export default function AllotmentPolicy() {
           <Table.Body>
             {HOUSING.map((item, index) => {
               return (
-                <Table.Row textAlign="center">
+                <Table.Row textAlign='center'>
                   <Table.Cell>{index + 1}</Table.Cell>
                   <Table.Cell>{item["cat"]}</Table.Cell>
                   <Table.Cell>{item["percentage"] + "%"}</Table.Cell>
@@ -112,29 +112,8 @@ export default function AllotmentPolicy() {
         categories.
       </p>
 
-      <p>
-        The number of plots (approximately) available in the proposed colony for
-        each category are as under:-
-      </p>
-      <ol>
-        <li>
-          Economically weaker sections/ Low Income Groups( EWS/LIG) 105 plots of
-          25’x40’ size
-        </li>
-
-        <li>Middle Income groups ( MIG) 76 plots of 40’x60’ size</li>
-
-        <li>Higher Income groups (HIG) 52 plots of 45’x80’ size</li>
-      </ol>
-
-      <p>
-        The allotment of plots were decided by the draw of lots which was held
-        on 21st April 2007 in presence of all the registered applicants and the
-        Hon’ble Minister, Housing and Urban Development Department.
-      </p>
-
-      <Header as="h4"> COMMERCIAL :- </Header>
-      <Header as="h5">
+      <Header as='h4'> COMMERCIAL :- </Header>
+      <Header as='h5'>
         HOW TO APPLY FOR SHOP / SHOP SITE / COMMERCIAL SPACE.
       </Header>
 
@@ -143,19 +122,30 @@ export default function AllotmentPolicy() {
         for a period of 20 years in the first instance on lease / licencee.
       </p>
 
-      <p>The Minimum Reserve Premium (Development Charges Non-Refundable) are always indicated in the Auction Notice and the intending applicants / bidders are required to file their sealed bid, which shall be over and above the Minimum Reserve Premium.</p>
-    
-        <p>
-        The bids received are subject to acceptance of the Auction Committee, Srinagar Development Authority and usually the highest bids received are accepted.
-        </p>
+      <p>
+        The Minimum Reserve Premium (Development Charges Non-Refundable) are
+        always indicated in the Auction Notice and the intending applicants /
+        bidders are required to file their bids through E-Auction/e-tentering.
+      </p>
 
-        <p>
-        The rate of monthly rentals for Shops and Commercial Spaces are fixed for a period of five years and subject to increased of 15% after every five years. Likewise the annual ground rentals for Commercial sites are also fixed for (20) twenty years.
-        </p>
+      <p>
+        The bids received are subject to acceptance of the Auction Committee,
+        Srinagar Development Authority and usually the highest bids received are
+        accepted.
+      </p>
 
-        <p>
-        The Auction Notices are given wide publicity in local leading daily newspapers and on electric media and the auction notices are also available on our official website.
-        </p>
+      <p>
+        The rate of monthly rentals for Shops and Commercial Spaces are fixed
+        for a period of five years and subject to increased of 10% after every
+        three years. Likewise the annual ground rentals for Commercial sites are
+        also fixed for (20) twenty years.
+      </p>
+
+      <p>
+        The Auction Notices are given wide publicity in local leading daily
+        newspapers and on electric media and the auction notices are also
+        available on our official website.
+      </p>
     </Container>
   );
 }

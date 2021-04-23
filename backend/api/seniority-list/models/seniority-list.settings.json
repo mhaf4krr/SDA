@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "seniority_lists",
+  "info": {
+    "name": "Seniority List"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "date": {
+      "type": "date",
+      "required": true
+    },
+    "file": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true
+    }
+  }
+}

@@ -2,7 +2,9 @@ import React from "react";
 
 import { Table, Header, Icon } from "semantic-ui-react";
 
-import styles from "../../styles/Board.module.css"
+import styles from "../../styles/Board.module.css";
+
+import PageContainer from "../../components/PageContainer/PageContainer";
 
 let members = [
   {
@@ -60,12 +62,12 @@ let members = [
 
 export default function Board() {
   return (
-    <div className={styles["main_wrapper"]} style={{ padding: "3.5rem" }}>
+    <PageContainer>
       <Header>SDA Board Members</Header>
 
       <Table celled unstackable>
         <Table.Header>
-          <Table.Row textAlign="center">
+          <Table.Row textAlign='center'>
             <Table.HeaderCell width={1}>S.No</Table.HeaderCell>
             <Table.HeaderCell>Member</Table.HeaderCell>
             <Table.HeaderCell>Designation</Table.HeaderCell>
@@ -75,7 +77,7 @@ export default function Board() {
         <Table.Body>
           {members.map((member, index) => {
             return (
-              <Table.Row textAlign="center">
+              <Table.Row textAlign='center'>
                 <Table.Cell>{index + 1}</Table.Cell>
                 <Table.Cell>{member["name"]}</Table.Cell>
                 <Table.Cell>{member["designation"]}</Table.Cell>
@@ -84,6 +86,6 @@ export default function Board() {
           })}
         </Table.Body>
       </Table>
-    </div>
+    </PageContainer>
   );
 }
