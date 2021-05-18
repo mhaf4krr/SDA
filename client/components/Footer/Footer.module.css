@@ -1,10 +1,17 @@
 .main_wrapper {
-    background: #111111;
-  
+  background: #1b1b1b;
 }
-.main_wrapper > p{
-    color:white;
-    font-size: 1rem;
-    text-align: center;
-    padding:.7rem 0
+.main_wrapper p {
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  padding: 1rem 0;
+  background-color: #2d2d31;
+}
+
+.sub_wrapper {
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+  margin: auto auto;
 }

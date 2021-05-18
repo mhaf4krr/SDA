@@ -56,6 +56,14 @@ export default function Navigation() {
           <Dropdown text='Organization' className='link item'>
             <Dropdown.Menu>
               <Dropdown.Item>
+                <Link href='About'>
+                  <a>Mission & Objectives</a>
+                </Link>
+              </Dropdown.Item>
+
+              <Dropdown.Divider />
+
+              <Dropdown.Item>
                 <Link href='/organization/Board'>
                   <a>SDA Borard Members</a>
                 </Link>

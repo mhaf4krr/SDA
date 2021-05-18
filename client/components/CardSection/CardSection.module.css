@@ -13,9 +13,3 @@
   justify-content: center;
   flex-wrap: wrap;
 }
-
-@media (max-width: 450px) {
-  .sub_wrapper {
-    min-width: 350px;
-  }
-}

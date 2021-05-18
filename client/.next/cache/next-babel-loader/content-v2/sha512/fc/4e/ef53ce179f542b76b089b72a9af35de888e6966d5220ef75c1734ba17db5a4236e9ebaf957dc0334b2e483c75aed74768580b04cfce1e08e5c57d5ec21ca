@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { jsx as _jsx } from \"react/jsx-runtime\";\nimport React from \"react\";\nimport styles from \"./PageContainer.module.css\";\nexport default function PageContainer(props) {\n  return /*#__PURE__*/_jsx(\"div\", {\n    className: styles[\"main_wrapper\"],\n    children: props.children\n  });\n}","map":null,"metadata":{},"sourceType":"module"}

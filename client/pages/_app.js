@@ -5,6 +5,9 @@ import Header from "../components/Header/Header";
 
 import Footer from "../components/Footer/Footer";
 
+import "semantic-ui-css/semantic.min.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+
 import Router from "next/router";
 import NProgress from "nprogress"; //nprogress module
 import "nprogress/nprogress.css"; //styles of nprogress
