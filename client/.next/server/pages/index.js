@@ -870,8 +870,9 @@ var jsx_runtime_ = __webpack_require__("F5FC");
 var external_react_ = __webpack_require__("cDcd");
 var external_react_default = /*#__PURE__*/__webpack_require__.n(external_react_);
 
-// EXTERNAL MODULE: ./node_modules/bootstrap/dist/css/bootstrap.min.css
-var bootstrap_min = __webpack_require__("q4sD");
+// EXTERNAL MODULE: external "next/head"
+var head_ = __webpack_require__("xnum");
+var head_default = /*#__PURE__*/__webpack_require__.n(head_);
 
 // EXTERNAL MODULE: ./components/BannerSection/BannerSection.module.css
 var BannerSection_module = __webpack_require__("u46R");
@@ -1344,7 +1345,23 @@ function CardSection() {
 
 function Home(props) {
   return /*#__PURE__*/Object(jsx_runtime_["jsxs"])("div", {
-    children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])(BannerSection, {
+    children: [/*#__PURE__*/Object(jsx_runtime_["jsxs"])(head_default.a, {
+      children: [/*#__PURE__*/Object(jsx_runtime_["jsx"])("title", {
+        children: "SRINAGAR DEVELOPMENT AUTHORITY | SDA"
+      }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("meta", {
+        name: "viewport",
+        content: "initial-scale=1.0, width=device-width"
+      }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("meta", {
+        name: "description",
+        content: "Official Website Portal of SDA"
+      }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("meta", {
+        name: "keywords",
+        content: "SDA,srinagar development authority,srinagar development,Srinagar,SMC,SDA,JaKeGA, JKIT, JKITD"
+      }), /*#__PURE__*/Object(jsx_runtime_["jsx"])("meta", {
+        name: "author",
+        content: "Mufti Hyder Ali"
+      })]
+    }), /*#__PURE__*/Object(jsx_runtime_["jsx"])(BannerSection, {
       banners: props.banners
     }), /*#__PURE__*/Object(jsx_runtime_["jsx"])(external_semantic_ui_react_["Divider"], {}), /*#__PURE__*/Object(jsx_runtime_["jsx"])(Main, {
       data: props["data"]
@@ -3280,13 +3297,6 @@ function makePublicRouterInstance(router) {
 
 /***/ }),
 
-/***/ "q4sD":
-/***/ (function(module, exports) {
-
-
-
-/***/ }),
-
 /***/ "rxnA":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -3440,6 +3450,13 @@ function createObserver(options) {
 "use strict";
 exports.__esModule=true;exports.normalizePathSep=normalizePathSep;exports.denormalizePagePath=denormalizePagePath;function normalizePathSep(path){return path.replace(/\\/g,'/');}function denormalizePagePath(page){page=normalizePathSep(page);if(page.startsWith('/index/')){page=page.slice(6);}else if(page==='/index'){page='/';}return page;}
 //# sourceMappingURL=denormalize-page-path.js.map
+
+/***/ }),
+
+/***/ "xnum":
+/***/ (function(module, exports) {
+
+module.exports = require("next/head");
 
 /***/ })
 
