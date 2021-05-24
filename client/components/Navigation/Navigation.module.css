@@ -1,6 +1,11 @@
 .main_wrapper a {
-  padding: 0.5 1rem;
+  /* padding: 1rem 1rem !important; */
   color: black;
+}
+
+.main_wrapper > div {
+  display: flex !important;
+  flex-wrap: wrap !important;
 }
 
 .supreme_wrapper {

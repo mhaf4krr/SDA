@@ -22,21 +22,26 @@ export default function CardSection() {
         <Card
           icon='check circle
 '
-          title='RTI'
-          link='/rti/RTI'
+          title='BOCA'
+          link='/planning/BOCAMinutes'
         />
 
         <Card icon='folder' title='J&K PSG Act' link='/PSGAct' />
 
+        <Card icon='file' title='Downloads' link='/downloads/Downloads' />
+
         <Card
-          icon='home'
-          title='Available Properties'
-          link='/AvailableProperties'
+          icon='file'
+          title='Procedure for Building Plan Approval'
+          link='/land_management/DocumentsRequired'
         />
 
-        <Card icon='file' title='Procedure' link='/Applications' />
-
-        <Card icon='cogs' title='eServices' link='/eServices' />
+        <Card
+          icon='cogs'
+          title='Services'
+          external
+          link={main_backend_path + "/uploads/services_2428bdef1e.pdf"}
+        />
       </div>
     </div>
   );

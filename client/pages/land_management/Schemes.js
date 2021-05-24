@@ -1,12 +1,14 @@
 import React from "react";
 
+import styles from "../../styles/TextAlign.module.css";
+
 import { Container, Divider, Header } from "semantic-ui-react";
 
 export default function Schemes() {
   return (
-    <div  style={{padding:"2rem"}}>
-        <Divider/>
-      <Container>
+    <div style={{ padding: "2rem" }}>
+      <Divider />
+      <Container className={styles["wrapper"]}>
         <Header>
           {" "}
           Slum Clearance under VAMBAY (Valmiks-Ambedakar Awas Yojna) Scheme
@@ -28,14 +30,9 @@ export default function Schemes() {
         </p>
 
         <p>
-          The land thus restored shall be landscaped within a comprehensive
-          landscape development scheme.
-        </p>
-
-        <p>
           The banks of River Jhelum have been decided to be cleared of all
           encroachments and the boatmen living on either side of the banks of in
-          Boats/ sheds have been proposed to be rehabilitated.
+          Boats/ sheds have been rehabilitated.
         </p>
         <p>
           In phase Ist residential sheds from Shivpora to Foot Bridge have been
@@ -65,70 +62,80 @@ export default function Schemes() {
 
         <Header>2. Chunti Khul Nallah</Header>
         <p>
-        Chunti Khul an important offshoot of river Jehlum passes through the most prestigious areas of the city, i.e Dalgate
+          Chunti Khul an important offshoot of river Jehlum passes through the
+          most prestigious areas of the city, i.e Dalgate
         </p>
 
         <ul>
-            <li>
-            Effective steps have already been taken for removal of slums from the banks/islands of this nallah.
-            </li>
+          <li>
+            Effective steps have already been taken for removal of slums from
+            the banks/islands of this nallah.
+          </li>
 
-            <li>
-            350 families have already been removed from the area and rehabilitated elsewhere
-            </li>
+          <li>
+            350 families have already been removed from the area and
+            rehabilitated elsewhere
+          </li>
 
-            <li>
-            Remaining structures  also be shifted after a detailed survey
-            </li>
+          <li>Remaining structures also be shifted after a detailed survey</li>
 
-            <li>
-            The land thus restored is to be landscaped in conformity with the master plan proposals of Srinagar city
-            </li>
+          <li>
+            The land thus restored is to be landscaped in conformity with the
+            master plan proposals of Srinagar city
+          </li>
         </ul>
 
         <p>
-        The Srinagar Development Authority have from time to time allotted plots free of cost in Bemina Boatman Colony, Noorbagh Boatmen Colony, LS-SB Colony Bemina and Jehlum (Patches) Bemina to the Boatmen who lived in the City Channels, Water Bodies and River Jhelum under the rehabilitation scheme who were identified by the Government/ Srinagar Development Authority in view of the beautification of Srinagar City etc., the Government/ Srinagar Development Authority apart from providing residential plots have covered the beneficiary’s with the cash subsidy of Rs. 45,000.00 per beneficiary for construction of the dwelling units. The amount of subsidy was shared by the Central Government and State Government on 50:50 basis. The details of the Scheme are provided hereunder:
+          The Srinagar Development Authority have from time to time allotted
+          plots free of cost in Bemina Boatman Colony, Noorbagh Boatmen Colony,
+          LS-SB Colony Bemina and Jehlum (Patches) Bemina to the Boatmen who
+          lived in the City Channels, Water Bodies and River Jhelum under the
+          rehabilitation scheme who were identified by the Government/ Srinagar
+          Development Authority in view of the beautification of Srinagar City
+          etc., the Government/ Srinagar Development Authority apart from
+          providing residential plots have covered the beneficiary’s with the
+          cash subsidy of Rs. 45,000.00 per beneficiary for construction of the
+          dwelling units. The amount of subsidy was shared by the Central
+          Government and State Government on 50:50 basis. The details of the
+          Scheme are provided hereunder:
         </p>
 
-
-        <Header>
-        VAMBAY Scheme No 18082.
-        </Header>
+        <Header>VAMBAY Scheme No 18082.</Header>
 
         <p>
-        ·Total Number of Families Living in Sheds identified for Construction of Dwelling Units 442.
+          ·Total Number of Families Living in Sheds identified for Construction
+          of Dwelling Units 442.
         </p>
         <p>
-        ·Amount of Subsidy Involved 198.90 lacs on 50:50 basis (Centre/ State Share).
+          ·Amount of Subsidy Involved 198.90 lacs on 50:50 basis (Centre/ State
+          Share).
         </p>
 
+        <p>·Amount of Subsidy Released 198.90 lacs.</p>
+
         <p>
-        ·Amount of Subsidy Released 198.90 lacs.
+          ·Progress Achieved by the Beneficiaries after Release of Subsidy in
+          Construction Of Dwelling Units: Completed: 442.
         </p>
 
-        <p>
-        ·Progress Achieved by the Beneficiaries after Release of Subsidy in Construction  Of Dwelling Units: Completed: 442.
-        </p>
-
-
-        <Header>
-        VAMBAY Scheme No 18632
-        </Header>
+        <Header>VAMBAY Scheme No 18632</Header>
 
         <p>
-        ·Total Number of Families Living in Sheds identified for Construction of Dwelling Units 646.
+          ·Total Number of Families Living in Sheds identified for Construction
+          of Dwelling Units 646.
         </p>
 
         <p>
-        ·Amount of Subsidy Involved 291.10 lacs on 50:50 basis (Centre/ State Share).
+          ·Amount of Subsidy Involved 291.10 lacs on 50:50 basis (Centre/ State
+          Share).
         </p>
 
-        <p>
-        ·Amount of Subsidy Released 254.925 lacs.
-        </p>
+        <p>·Amount of Subsidy Released 254.925 lacs.</p>
 
         <p>
-        ·Progress Achieved by the Beneficiaries after Release of Subsidy in Construction of Dwelling Units: Completed: 487     Plinths: 30 Non Starters: 129.
+          ·Progress Achieved by the Beneficiaries after Release of Subsidy in
+          Construction of Dwelling Units: Completed: 487 Plinths: 30 Non
+          Starters: 129.
         </p>
       </Container>
     </div>

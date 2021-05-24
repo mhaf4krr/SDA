@@ -3,20 +3,34 @@
   background: #ffffff;
   border-radius: 0.4rem;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .image {
-  width: 60%;
-  height: 100%;
+  width: 40%;
+  height: 60%;
 }
 
 .information {
-  flex-grow: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0 1rem;
 }
+
+.information > h5 {
+  margin: 0.5rem 0 !important;
+
+  font-size: 1rem !important;
+  font-weight: bold;
+}
+.information > p {
+  font-size: 0.9rem !important;
+}
+
 .information {
   text-align: center;
 }

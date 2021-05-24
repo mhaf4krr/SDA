@@ -197,9 +197,6 @@ export default function Navigation() {
               <Dropdown.Item>
                 <Link href='/planning/BOCA'>BOCA Committees</Link>
               </Dropdown.Item>
-              <Dropdown.Item>
-                <Link href='/planning/BOCAMinutes'>BOCA Minutes</Link>
-              </Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
 
@@ -226,12 +223,6 @@ export default function Navigation() {
                   Online Tenders
                 </a>
               </Dropdown.Item>
-
-              <Dropdown.Item>
-                <a target='_blank' href='https:/eoffice.jk.gov.in'>
-                  e-Office JK
-                </a>
-              </Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
 
@@ -242,14 +233,15 @@ export default function Navigation() {
                   Allotment Policy
                 </Link>
               </Dropdown.Item>
-              <Dropdown.Item>
-                <Link href='/land_management/FutureLandPolicy'>
-                  Future Land Policy
-                </Link>
-              </Dropdown.Item>
+
               <Dropdown.Item>
                 <Link href='/land_management/TransferPolicy'>
                   Transfer Policy
+                </Link>
+              </Dropdown.Item>
+              <Dropdown.Item>
+                <Link href='/land_management/FutureLandPolicy'>
+                  Future Land Policy
                 </Link>
               </Dropdown.Item>
               <Dropdown.Item>
@@ -267,7 +259,13 @@ export default function Navigation() {
                   SDA Parking Lots
                 </Link>
               </Dropdown.Item>
-              <Dropdown.Item>Shops/Shopsites</Dropdown.Item>
+              <Dropdown.Item>
+                <a
+                  target='_blank'
+                  href={main_backend_path + "/uploads/Shops1_d12d0f2a94.pdf"}>
+                  Shops/Shopsites
+                </a>
+              </Dropdown.Item>
               <Dropdown.Item>
                 <Link href='/land_management/Schemes'>Government Schemes</Link>
               </Dropdown.Item>
@@ -280,10 +278,10 @@ export default function Navigation() {
           <Dropdown text='RTI' className='link item'>
             <Dropdown.Menu>
               <Dropdown.Item>
-                <Link href='/rti/Applications'>RTI Applications</Link>
+                <Link href='/rti/RTI'>RTI Details</Link>
               </Dropdown.Item>
               <Dropdown.Item>
-                <Link href='/rti/RTI'>RTI Details</Link>
+                <Link href='/rti/Applications'>RTI Applications</Link>
               </Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
@@ -303,12 +301,12 @@ export default function Navigation() {
             </Dropdown.Menu>
           </Dropdown>
 
-          <Menu.Item
+          {/* <Menu.Item
             name='downloads'
             active={activeItem === "downloads"}
             onClick={handleItemClick}>
             <Link href='/downloads/Downloads'>Downloads</Link>
-          </Menu.Item>
+          </Menu.Item> */}
 
           <Menu.Item>
             <Link href='/contact/Contact'>Contact Us</Link>

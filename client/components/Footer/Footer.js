@@ -26,24 +26,24 @@ export default function Footer() {
 
   let QUICK_LINKS = [
     {
-      title: "Government Schemes",
-      link: "/land_management/Schemes",
-    },
-    {
       title: "Srinagar Master Plan",
       link: "/planning/MasterPlan",
     },
     {
-      title: "Housing Projects",
-      link: "/projects/Housing",
+      title: "Available Properties",
+      link: "/AvailableProperties",
     },
     {
-      title: "Commercial Projects",
-      link: "/projects/Commercial",
+      title: "List of Documents for Applications",
+      link: "/Applications",
     },
     {
-      title: "Infrastructural Projects",
-      link: "/projects/Infrastructural",
+      title: "Allotment Policy",
+      link: "/land_management/AllotmentPolicy",
+    },
+    {
+      title: "Transfer Policy",
+      link: "/land_management/TransferPolicy",
     },
   ];
 

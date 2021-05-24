@@ -30,6 +30,7 @@ export default function SeniorityList(props) {
                     {new Date(download["date"]).toLocaleDateString()}
                   </Table.Cell>
                   <Table.Cell>
+                    {console.log(download)}
                     <a
                       target='_blank'
                       href={main_backend_path + download["file"]["url"]}>
@@ -51,6 +52,8 @@ export async function getServerSideProps(context) {
     let result = await fetch(backend + "seniority-lists");
 
     let data = await result.json();
+
+    console.log(data);
 
     return {
       props: { downloads: data },
