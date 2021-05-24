@@ -35,7 +35,7 @@ export default function NotificationsSection(props) {
         return props["data"]["eoi"];
         break;
 
-      case "Short Term Quotations":
+      case "Auction Notices":
         return props["data"]["short_term_quotations"];
         break;
 
@@ -76,8 +76,8 @@ export default function NotificationsSection(props) {
         />
 
         <Menu.Item
-          name='Short Term Quotations'
-          active={activeItem === "Short Term Quotations"}
+          name='Auction Notices'
+          active={activeItem === "Auction Notices"}
           onClick={handleItemClick}
         />
       </Menu>
