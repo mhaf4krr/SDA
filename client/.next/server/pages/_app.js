@@ -3333,8 +3333,8 @@ function makePublicRouterInstance(router) {
 // export let main_backend_path = "http://192.168.0.102:1337";
 // export let backend = "https://selfish-pig-12.loca.lt/api/";
 // export let main_backend_path = "https://selfish-pig-12.loca.lt/";
-let backend = "http://localhost:1337/api/";
-let main_backend_path = "http://localhost:1337";
+let backend = "http://localhost:1339/api/";
+let main_backend_path = "https://backendsdasrinagar.jk.gov.in";
 
 /***/ }),
 
