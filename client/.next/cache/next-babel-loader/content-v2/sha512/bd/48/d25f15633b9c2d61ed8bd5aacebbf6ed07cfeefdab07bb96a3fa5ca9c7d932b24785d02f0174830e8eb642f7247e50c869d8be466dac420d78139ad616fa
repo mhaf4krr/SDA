@@ -1,0 +1,1 @@
+{"ast":null,"code":"import { jsx as _jsx } from \"react/jsx-runtime\";\nimport React from \"react\";\nimport ReactMarkdown from \"react-markdown\";\nexport default function Markdown(_ref) {\n  var markdown = _ref.markdown;\n  return /*#__PURE__*/_jsx(ReactMarkdown, {\n    children: markdown\n  });\n}","map":null,"metadata":{},"sourceType":"module"}

@@ -1,0 +1,1 @@
+{"ast":null,"code":"export let backend = \"http://localhost:1339/api/\";\nexport let main_backend_path = \"https://backendsdasrinagar.jk.gov.in\"; // export let backend = process.env[\"BACKEND\"];\n// export let main_backend_path = process.env[\"MAIN_BACKEND_PATH\"];","map":null,"metadata":{},"sourceType":"module"}
